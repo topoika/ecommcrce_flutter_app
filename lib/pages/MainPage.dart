@@ -18,9 +18,9 @@ class MainPage extends StatefulWidget {
   _MainPageState createState() => _MainPageState();
 }
 
-String baseUrl = "https://wiilshop.com/wp-json/wc/v3";
-String consumerKey = "ck_3548dc367c87d1bbc22bf4861af3c3212f50ed10";
-String consumerSecret = "cs_3c8f4c9957e4311b8749cccc819c1d964af03726";
+String baseUrl = "";
+String consumerKey = "";
+String consumerSecret = "";
 
 class _MainPageState extends State<MainPage>
     with SingleTickerProviderStateMixin {
@@ -54,9 +54,7 @@ class _MainPageState extends State<MainPage>
     ),
     CartPageWidget(),
     AccountPageWidget(),
-    Scaffold(
-      body: SafeArea(child: SingleChildScrollView(child: Card(child: Text('Products $products'),),
-    ),
+    HelpPageWidget(),
   ];
 
   static var _kTabs = <Tab>[
